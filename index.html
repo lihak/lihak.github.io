@@ -1,7 +1,204 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Isar</title>
+<!--css-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--/css-->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Isar" />
+<script type="application/x-javascript">
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<!-- //for-mobile-apps -->
+<!-- js -->
+<script src="js/jquery.min.js">
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!-- /js -->
+<!--script-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$(".scroll").click(function(event) {
+		event.preventDefault();
+		$('html,body').animate({
+			scrollTop : $(this.hash).offset().top
+		}, 900);
+	});
+});
+</script>
+<!--/script-->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="navigation">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="mailto:lihak.kang@the-isar.com">Contact Us</a></li>
+						</ul>
+						<!-- script-for-menu -->
+						<script>
+							$("span.menu").click(function() {
+								$("ul.nav1").slideToggle(300, function() {
+									// Animation complete.
+								});
+							});
+						</script>
+						<!-- /script-for-menu -->
+						<div class="clearfix"></div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="logo">
+			<a href="index.html"><img src="images/isar_logo.png" /></a>
+		</div>
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			$(function() {
+				$("#slider").responsiveSlides({
+					auto : true,
+					nav : true,
+					speed : 500,
+					namespace : "callbacks",
+					pager : true,
+				});
+			});
+		</script>
+		<div class="slider">
+			<div class="container">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<h3>Isar is and always will be an engineering company.</h3>
+						</li>
+						<li>
+							<h3>We hire people with a broad set of technical skills who are ready to tackle some of technology's greatest challenges.</h3>
+						</li>
+						<li>
+							<h3>Develop the next-generation technologies that change how millions interact.</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- script-for-menu -->
+	<script>
+		$("span.menu").click(function() {
+			$(".top-nav ul").slideToggle("slow", function() {});
+		});
+	</script>
+	<!-- script-for-menu -->
+	<div class="index-about">
+		<div class="container">
+			<h3>Welcome To Isar</h3>
+			<p>Isar is and always will be an engineering company. We hire people with a broad set of technical skills who are ready to tackle some of technology's greatest challenges. At Isar, engineers not only revolutionize search, they routinely work on massive scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. Isar engineers are changing the world one technological achievement after another.</p>
+		</div>
+	</div>
+	<!-- news -->
+	<div class="news">
+		<div class="container">
+			<div class="news-text">
+				<h3>Latest News</h3>
+			</div>
+			<div class="news-grid" style="width:100%">
+				<a href="about.html"><h4>Facebook</h4></a>
+				<span style="font-size:15px">2017 Facebook start-up 지원 FbStart Bootstrap Track 선정</span>
+			</div>
+			<div class="news-grid" style="width:100%">
+				<a href="about.html"><h4>FREEMOA</h4></a>
+				<span style="font-size:15px">2015 FREEMOA 우수 파트너스 선정</span>
+			</div>
+			<div class="news-grids">
+				<div class="col-md-3 news-grid mask">
+					<a href="about.html"><h4>indSound</h4></a>
+					<span>NOV 2016 - OCT 2017</span>
+					<a href="about.html" class="mask"><img src="images/indiesound.png" alt="image" class="img-responsive zoom-img"></a>
+					<div class="news-info"><p>Independent Music Network</p></div>
+				</div>
+				<div class="col-md-3 news-grid mask">
+					<a href="about.html"><h4>Huddys 오프로드</h4></a>
+					<span>FEB 2016 - SEP 2016</span>
+					<a href="about.html" class="mask"><img src="images/huddys_offroad.png" alt="image" class="img-responsive zoom-img"></a>
+					<div class="news-info"><p>Off-road navigation</p></div>
+				</div>
+				<div class="col-md-3 news-grid mask">
+					<a href="#"><h4>Farmpas</h4></a>
+					<span>SEP 2015 - OCT 2015</span>
+					<a href="about.html" class="mask"><img src="images/farmpas.png" alt="image" class="img-responsive zoom-img"></a>
+					<div class="news-info"><p>Social network service for urban farmer</p></div>
+				</div>
+				<div class="col-md-3 news-grid mask">
+					<a href="about.html"><h4>GISC Seoul</h4></a>
+					<span>JUN 2015 - JUL 2015</span>
+					<a href="about.html" class="mask"><img src="images/kma.png" alt="image" class="img-responsive zoom-img"></a>
+					<div class="news-info"><p>Korea Meteorological Administration</p></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //news -->
+	<!-- footer -->
+	<div class="copyright">
+		<!-- container -->
+		<div class="container">
+			<div class="copyright-left">
+				<p>Copyrights © 2015 Isar. All rights reserved</p>
+			</div>
+			<div class="copyright-right">
+				<ul>
+					<li><a
+						href="https://www.facebook.com/ISAR-433883366783526/?ref=hl"
+						target="_blank" class="twitter facebook"> </a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+		<!-- //container -->
+	</div>
+	<!---->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+			};
+			 */
+			$().UItoTop({
+				easingType : 'easeOutQuart'
+			});
+		});
+	</script>
+	<a href="#to-top" id="toTop" style="display: block;"> <span
+		id="toTopHover" style="opacity: 1;"> </span></a>
+	<!---->
 </body>
 </html>
